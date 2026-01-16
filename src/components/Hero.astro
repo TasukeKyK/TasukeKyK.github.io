@@ -1,14 +1,25 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
+import Layout from "../layouts/Layout.astro";
+import LogoInstagram from "./logo/LogoInstagram.astro";
+import LogoTwitter from "./logo/LogoTwitter.astro";
+import LogoYoutube from "./logo/LogoYoutube.astro";
+import LogoLinkedIn from './logo/LogoLinkedIn.astro';
 ---
+
 <section id="hero" class="pt-18 pb-10">
-	<div class="grid grid-cols-3 grid-rows-4 gap-4 max-w-6xl mx-auto ">
-		<div class="row-span-2 bg-amber-50">Foto</div>
-		<div class="col-span-2 bg-amber-100">Nombre + @</div>
-		<div class="col-span-2 col-start-2 row-start-2 bg-amber-200">redes</div>
-		<div class="col-span-3 row-span-2 row-start-3 bg-amber-300">intro</div>
-	</div>
+  <div class="md:grid grid-cols-3 grid-rows-4 gap-4 max-w-6xl mx-auto">
+    <div class="row-span-2 bg-amber-50 w-auto h-auto pt-15">
+      <img src="./../../public/static/img/judegato.jpg" class="rounded-2xl" />
+    </div>
+    <div class="col-span-2 self-center bg-amber-100 text-4xl font-mono font-extralight">
+      Pablo Salvador Del Rio Vergara<br><span class="text-3xl italic font-normal">Software Developer</span>
+    </div>
+    <div class="col-span-2 col-start-2 row-start-2 bg-amber-200">
+      <LogoYoutube />
+      <LogoInstagram />
+      <LogoLinkedIn />
+      <LogoTwitter />
+    </div>
+    <div class="col-span-3 row-span-2 row-start-3 bg-amber-300">intro</div>
+  </div>
 </section>
-
-
