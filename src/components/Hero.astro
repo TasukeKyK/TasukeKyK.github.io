@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import LogoInstagram from "./logo/LogoInstagram.astro";
 import LogoTwitter from "./logo/LogoTwitter.astro";
 import LogoYoutube from "./logo/LogoYoutube.astro";
-import LogoLinkedIn from './logo/LogoLinkedIn.astro';
+import LogoLinkedIn from "./logo/LogoLinkedIn.astro";
 ---
 
 <section id="hero" class="pt-18 pb-10">
@@ -11,14 +11,22 @@ import LogoLinkedIn from './logo/LogoLinkedIn.astro';
     <div class="row-span-2 bg-amber-50 w-auto h-auto pt-15">
       <img src="./../../public/static/img/judegato.jpg" class="rounded-2xl" />
     </div>
-    <div class="col-span-2 self-center bg-amber-100 text-4xl font-mono font-extralight">
-      Pablo Salvador Del Rio Vergara<br><span class="text-3xl italic font-normal">Software Developer</span>
+    <div
+      class="col-span-2 self-center bg-amber-100 text-4xl font-mono font-extralight text-center lg:text-left"
+    >
+      Pablo Salvador Del Rio Vergara<br /><span
+        class="text-3xl italic font-normal">Software Developer</span
+      >
     </div>
     <div class="col-span-2 col-start-2 row-start-2 bg-amber-200">
-      <LogoYoutube />
-      <LogoInstagram />
-      <LogoLinkedIn />
-      <LogoTwitter />
+      <div class="pl-2 pr-2 md:pl-0 md:pr-0 flow-root">
+        <LogoYoutube />
+        <LogoInstagram />
+      </div>
+      <div class="pl-2 pr-2 md:pl-0 md:pr-0 flow-root">
+        <LogoLinkedIn />
+        <LogoTwitter />
+      </div>
     </div>
     <div class="col-span-3 row-span-2 row-start-3 bg-amber-300">intro</div>
   </div>
